@@ -149,30 +149,55 @@ public class Catalogo implements Serializable{
         
         Album plusDeluxeEdition = new Album();
         plusDeluxeEdition.setNombre("+ Deluxe Edition");
-        xDeluxeEdition.setArtista(edSheeran);
+        plusDeluxeEdition.setArtista(edSheeran);
+        plusDeluxeEdition.setCantidadCanciones(16);
+        plusDeluxeEdition.setDisquera("Warner Music");
+        plusDeluxeEdition.setArtistaId(edSheeran.getArtistaId());
+        session.save(plusDeluxeEdition);
 
         Album cinco =  new Album();
         cinco.setNombre("5");//
         cinco.setArtista(edSheeran);
+        cinco.setCantidadCanciones(32);
+        cinco.setDisquera("Warner Music");
+        cinco.setArtistaId(edSheeran.getArtistaId());
+        session.save(cinco);
         
         //    Álbumes de Lil Wayne
         Album theCarterVI = new Album();
         theCarterVI.setNombre("The Carter VI");
         theCarterVI.setArtista(lilWayne);
+        theCarterVI.setCantidadCanciones(19);
+        theCarterVI.setDisquera("Cash Money Records");
+        theCarterVI.setArtistaId(lilWayne.getArtistaId());
+        session.save(theCarterVI);
         
-        Album theCarterV = new Album();
-        theCarterV.setNombre("+ The Carter V");
-        theCarterV.setArtista(lilWayne);
+        Album theCarterII = new Album();
+        theCarterII.setNombre("+ The Carter II");
+        theCarterII.setArtista(lilWayne);
+        theCarterII.setCantidadCanciones(22);
+        theCarterII.setDisquera("Cash Money Records");
+        theCarterII.setArtistaId(lilWayne.getArtistaId());
+        session.save(theCarterII);
 
         Album theCarterIII =  new Album();
         theCarterIII.setNombre("The Carter III");
-        theCarterIII.setArtista(lilWayne);//
+        theCarterIII.setArtista(lilWayne);
+        theCarterIII.setCantidadCanciones(16);
+        theCarterIII.setDisquera("Cash Money Records");
+        theCarterIII.setArtistaId(lilWayne.getArtistaId());
+        session.save(theCarterIII);//
         
+        //Canciones del Album: Encore - Eminem
         Cancion evilDeeds = new Cancion();
         evilDeeds.setTitulo("Evil Deeds");
+        encore.getCanciones().add(evilDeeds);
+        
+        
         
         Cancion neverEnough = new Cancion();
         neverEnough.setTitulo("Never Enough");
+        encore.getCanciones().add(neverEnough);
         
         Cancion yellowBrickRoad = new Cancion();
         yellowBrickRoad.setTitulo("Yellow Brick Road");
@@ -191,13 +216,17 @@ public class Catalogo implements Serializable{
         
         Cancion paul = new Cancion();
         yellowBrickRoad.setTitulo("Paul");
+        //Fin canciones Encore - Eminem
         
+        
+        //Agregar artistas al catalogo
         catalogo.getArtistas().add(eminem);
         catalogo.getArtistas().add(lilWayne);
         catalogo.getArtistas().add(edSheeran);
+        catalogo.getArtistas().add(amyWinehouse);
         
-        encore.getCanciones().add(evilDeeds);
-        encore.getCanciones().add(neverEnough);
+        
+        
         
         //Agregar albumes
         eminem.getAlbums().add(theEminemShow);
@@ -244,6 +273,8 @@ public class Catalogo implements Serializable{
         Serializador.serialize(catalogo, new File ("/Users/minutti/Desktop/Catalogo_transient.negspot"));
         session.getTransaction().commit();
         session.close();
+        //prueba de imprimir el id del album a traves de la cancion
+        System.out.println(evilDeeds.getAlbumId());
     }//Cierre de main
     /**
      * @return the catalogoId

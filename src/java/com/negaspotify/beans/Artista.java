@@ -34,8 +34,8 @@ public class Artista implements Serializable {
     private String genero;
     @Column(name = "esBanda")
     private Boolean esBanda;
-    @Column(name = "portada")
-    private String portada;
+    @Column(name = "foto")
+    private String foto;
     private transient ArrayList<Album> albums;
     
     public Artista(){
