@@ -103,6 +103,7 @@ public class Catalogo implements Serializable{
         amyWinehouse.setGenero("Jazz, R&B, Soul");
         amyWinehouse.setNacionalidad("Britanica");
         amyWinehouse.setNombre("Amy Jade Winehouse");
+        amyWinehouse.setFoto("");
         session.save(amyWinehouse);
         
         //       Álbumes de Eminem 

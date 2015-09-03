@@ -99,17 +99,17 @@ public class Artista implements Serializable {
     }
 
     /**
-     * @return the portada
+     * @return the foto
      */
-    public String getPortada() {
-        return portada;
+    public String getFoto() {
+        return foto;
     }
 
     /**
-     * @param portada the portada to set
+     * @param foto the foto to set
      */
-    public void setPortada(String portada) {
-        this.portada = portada;
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     /**

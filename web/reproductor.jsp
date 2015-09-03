@@ -10,7 +10,7 @@
 <%@page import="com.negaspotify.beans.Catalogo"%>
 <%@page import="com.negaspotify.beans.utilerias.Serializador"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%Catalogo catalogo = (Catalogo) Serializador.deserialize(new File("/Users/minutti/Desktop/Catalogo.negspot"));%>
+<%--<%Catalogo catalogo = (Catalogo) Serializador.deserialize(new File("/Users/minutti/Desktop/Catalogo.negspot"));%>--%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,6 +19,7 @@
             #navegacion{width: 300px; height: 300px; border: 1px solid black; position: absolute; top: 10px; left:10px; }
             #playback{position: absolute;}
         </style>
+    
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Reproductor</title>
     </head>
@@ -28,6 +29,8 @@
         
             <div id = "navegacion">
                 <ul>
+                    
+                    <%--
                     <% 
                         Artista artista;
                         ArrayList<Artista> artistas = catalogo.getArtistas();
@@ -36,6 +39,8 @@
                             out.println("<li>" + artista.getNombre() + "</li>");
                         }
                     %>
+                    --%>
+                    
                 </ul>
                 
             </div>
