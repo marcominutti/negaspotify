@@ -34,10 +34,10 @@ public class Cancion implements Serializable{
     private String genero;
     
     @Column(name = "anio")
-    private Date anio;
+    private int anio;
     
     @Column(name = "duracion")
-    private Long duracion;
+    private int duracion;
     
     @Column(name = "albumId")
     private int albumId;
@@ -93,28 +93,28 @@ public class Cancion implements Serializable{
     /**
      * @return the anio
      */
-    public Date getAnio() {
+    public int getAnio() {
         return anio;
     }
 
     /**
      * @param anio the anio to set
      */
-    public void setAnio(Date anio) {
+    public void setAnio(int anio) {
         this.anio = anio;
     }
 
     /**
      * @return the duracion
      */
-    public Long getDuracion() {
+    public int getDuracion() {
         return duracion;
     }
 
     /**
      * @param duracion the duracion to set
      */
-    public void setDuracion(Long duracion) {
+    public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
 

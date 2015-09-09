@@ -33,7 +33,7 @@ public class Album implements Serializable{
     @Column(name = "cantidadCanciones")
     private int cantidadCanciones;
     @Column(name = "anio")
-    private Date anio;
+    private int anio;
     @Column(name = "portada")
     private String portada;
     @Column(name = "disquera")
@@ -78,14 +78,14 @@ public class Album implements Serializable{
     /**
      * @return the anio
      */
-    public Date getAnio() {
+    public int getAnio() {
         return anio;
     }
 
     /**
      * @param anio the anio to set
      */
-    public void setAnio(Date anio) {
+    public void setAnio(int anio) {
         this.anio = anio;
     }
 
