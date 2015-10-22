@@ -6,7 +6,6 @@
 package com.negaspotify.beans;
 
 import java.io.Serializable;
-import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -41,6 +40,9 @@ public class Cancion implements Serializable{
     
     @Column(name = "albumId")
     private int albumId;
+    
+    @Column(name = "url")
+    private String url;
     
     private transient Album album;
     
@@ -158,6 +160,20 @@ public class Cancion implements Serializable{
      */
     public void setCancionId(int cancionId) {
         this.cancionId = cancionId;
+    }
+
+    /**
+     * @return the url
+     */
+    public String getUrl() {
+        return url;
+    }
+
+    /**
+     * @param url the url to set
+     */
+    public void setUrl(String url) {
+        this.url = url;
     }
     
 }

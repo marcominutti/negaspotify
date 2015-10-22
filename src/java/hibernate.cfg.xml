@@ -11,5 +11,6 @@
     <mapping class="com.negaspotify.beans.Cancion"/>
     <mapping class="com.negaspotify.beans.Artista"/>
     <mapping class="com.negaspotify.beans.Album"/>
+    <mapping class="com.negaspotify.beans.Usuario"/>
   </session-factory>
 </hibernate-configuration>

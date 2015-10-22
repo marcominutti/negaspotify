@@ -91,6 +91,7 @@ public class Catalogo implements Serializable{
         eminem.setNacionalidad("Estadounidense");
         eminem.setGenero("Hip Hop");
         //eminem.setNombre("Marshall Bruce Mathers III");
+        eminem.setFoto("imagenes/artistas/eminem.png");
         session.save(eminem);
         
         //Ed Sheeran\\
@@ -99,6 +100,7 @@ public class Catalogo implements Serializable{
         edSheeran.setEsBanda(false);
         edSheeran.setNacionalidad("Britanico");
         //edSheeran.setNombre("Edward Christopher Sheeran");
+        edSheeran.setFoto("imagenes/artistas/ed_sheeran.png");
         edSheeran.setGenero("indie");
         session.save(edSheeran);
         
@@ -109,6 +111,7 @@ public class Catalogo implements Serializable{
         lilWayne.setGenero("Hip Hop");
         lilWayne.setNacionalidad("Estadounidense");
         //lilWayne.setNombre("Dwayne Michael Carter");
+        lilWayne.setFoto("imagenes/artistas/lil_wayne.png");
         session.save(lilWayne);
         
         // Artista Amy Winehouse \\
@@ -118,7 +121,7 @@ public class Catalogo implements Serializable{
         amyWinehouse.setGenero("Jazz, R&B, Soul");
         amyWinehouse.setNacionalidad("Britanica");
         //amyWinehouse.setNombre("Amy Jade Winehouse");
-        amyWinehouse.setFoto("");
+        amyWinehouse.setFoto("imagenes/artistas/amy.jpg");
         session.save(amyWinehouse);
         
         //___________ÁLBUMES____________\\
@@ -131,6 +134,7 @@ public class Catalogo implements Serializable{
         encore.setDisquera("Math Records");
         encore.setArtistaId(eminem.getArtistaId());
         encore.setAnio(2004);
+        encore.setPortada("imagenes/portadas/+.jpg");
         session.save(encore);
         
         Album theEminemShow = new Album();
@@ -145,7 +149,7 @@ public class Catalogo implements Serializable{
         Album curtainCall =  new Album();
         curtainCall.setNombre("Curtain Call");
         curtainCall.setArtista(eminem);
-        curtainCall.setCantidadCanciones(17);
+        curtainCall.setCantidadCanciones(9);
         curtainCall.setDisquera("Shady/ Aftermath/ Interscope");
         curtainCall.setArtistaId(eminem.getArtistaId());
         curtainCall.setAnio(2005);
@@ -250,6 +254,7 @@ public class Catalogo implements Serializable{
         introEncore.setGenero("Hip Hop");
         introEncore.setAlbumId(encore.getAlbumId());
         introEncore.setAnio(encore.getAnio());
+        introEncore.setUrl("Artistas/Eminem/cancion1.mp3");
         session.save(introEncore);
         //02
         Cancion evilDeeds = new Cancion();
@@ -259,6 +264,7 @@ public class Catalogo implements Serializable{
         evilDeeds.setGenero("Hip Hop");
         evilDeeds.setAlbumId(encore.getAlbumId());
         evilDeeds.setAnio(encore.getAnio());
+        evilDeeds.setUrl("Artistas/Eminem/cancion2.mp3");
         session.save(evilDeeds);
         //03
         Cancion neverEnough = new Cancion();
@@ -267,6 +273,7 @@ public class Catalogo implements Serializable{
         neverEnough.setGenero("Hip Hop");
         neverEnough.setAlbumId(encore.getAlbumId());
         neverEnough.setAnio(encore.getAnio());
+        neverEnough.setUrl("Artistas/Eminem/cancion3.mp3");
         session.save(neverEnough);
         //04
         Cancion yellowBrickRoad = new Cancion();
@@ -274,6 +281,7 @@ public class Catalogo implements Serializable{
         yellowBrickRoad.setAlbumId(encore.getAlbumId());
         yellowBrickRoad.setAnio(encore.getAnio());
         yellowBrickRoad.setGenero("Hip Hop");
+        yellowBrickRoad.setUrl("Artistas/Eminem/cancion4.mp3");
         session.save(yellowBrickRoad);
         //05
         Cancion likeToySoldiers = new Cancion();
@@ -281,6 +289,7 @@ public class Catalogo implements Serializable{
         likeToySoldiers.setAlbumId(encore.getAlbumId());
         likeToySoldiers.setAnio(encore.getAnio());
         likeToySoldiers.setGenero("Hip Hop");
+        likeToySoldiers.setUrl("Artistas/Eminem/cancion5.mp3");
         session.save(likeToySoldiers);
         //06
         Cancion mosh = new Cancion();
@@ -288,6 +297,7 @@ public class Catalogo implements Serializable{
         mosh.setAlbumId(encore.getAlbumId());
         mosh.setAnio(encore.getAnio());
         mosh.setGenero("Hip Hop");
+        mosh.setUrl("Artistas/Eminem/cancion6.mp3");
         session.save(mosh);
         //07
         Cancion puke = new Cancion();
@@ -295,6 +305,7 @@ public class Catalogo implements Serializable{
         puke.setAlbumId(encore.getAlbumId());
         puke.setAnio(encore.getAnio());
         puke.setGenero("Hip Hop");
+        puke.setUrl("Artistas/Eminem/cancion7.mp3");
         session.save(puke);
         //08
         Cancion my1stSingle = new Cancion();
@@ -302,6 +313,7 @@ public class Catalogo implements Serializable{
         my1stSingle.setAlbumId(encore.getAlbumId());
         my1stSingle.setAnio(encore.getAnio());
         my1stSingle.setGenero("Hip Hop");
+        my1stSingle.setUrl("Artistas/Eminem/cancion8.mp3");
         session.save(my1stSingle);
         //09
         Cancion paul = new Cancion();
@@ -309,6 +321,7 @@ public class Catalogo implements Serializable{
         paul.setAlbumId(encore.getAlbumId());
         paul.setAnio(encore.getAnio());
         paul.setGenero("Hip Hop");
+        paul.setUrl("Artistas/Eminem/cancion9.mp3");
         session.save(paul);
         //10
         Cancion rainMan = new Cancion();
@@ -316,6 +329,7 @@ public class Catalogo implements Serializable{
         rainMan.setAlbumId(encore.getAlbumId());
         rainMan.setAnio(encore.getAnio());
         rainMan.setGenero("Hip Hop");
+        rainMan.setUrl("Artistas/Eminem/cancion10.mp3");
         session.save(rainMan);
         //11
         Cancion bigWeenie = new Cancion();
@@ -323,6 +337,7 @@ public class Catalogo implements Serializable{
         bigWeenie.setAlbumId(encore.getAlbumId());
         bigWeenie.setAnio(encore.getAnio());
         bigWeenie.setGenero("Hip Hop");
+        bigWeenie.setUrl("Artistas/Eminem/cancion11.mp3");
         session.save(bigWeenie);
         //12
         Cancion emCallsPaul = new Cancion();
@@ -330,6 +345,7 @@ public class Catalogo implements Serializable{
         emCallsPaul.setAlbumId(encore.getAlbumId());
         emCallsPaul.setAnio(encore.getAnio());
         emCallsPaul.setGenero("Hip Hop");
+        emCallsPaul.setUrl("Artistas/Eminem/cancion12.mp3");
         session.save(emCallsPaul);
         //13
         Cancion justLoseIt = new Cancion();
@@ -337,6 +353,7 @@ public class Catalogo implements Serializable{
         justLoseIt.setAlbumId(encore.getAlbumId());
         justLoseIt.setAnio(encore.getAnio());
         justLoseIt.setGenero("Hip Hop");
+        justLoseIt.setUrl("Artistas/Eminem/cancion13.mp3");
         session.save(justLoseIt);
         //14
         Cancion assLikeThat = new Cancion();
@@ -344,6 +361,7 @@ public class Catalogo implements Serializable{
         assLikeThat.setAlbumId(encore.getAlbumId());
         assLikeThat.setAnio(encore.getAnio());
         assLikeThat.setGenero("Hip Hop");
+        assLikeThat.setUrl("Artistas/Eminem/cancion14.mp3");
         session.save(assLikeThat);
         //15
         Cancion spendSomeTime = new Cancion();
@@ -351,6 +369,7 @@ public class Catalogo implements Serializable{
         spendSomeTime.setAlbumId(encore.getAlbumId());
         spendSomeTime.setAnio(encore.getAnio());
         spendSomeTime.setGenero("Hip Hop");
+        spendSomeTime.setUrl("Artistas/Eminem/cancion15.mp3");
         session.save(spendSomeTime);
         //16
         Cancion mockingbird = new Cancion();
@@ -358,6 +377,7 @@ public class Catalogo implements Serializable{
         mockingbird.setAlbumId(encore.getAlbumId());
         mockingbird.setAnio(encore.getAnio());
         mockingbird.setGenero("Hip Hop");
+        mockingbird.setUrl("Artistas/Eminem/cancion16.mp3");
         session.save(mockingbird);
         //17
         Cancion crazyInLove = new Cancion();
@@ -365,6 +385,7 @@ public class Catalogo implements Serializable{
         crazyInLove.setAlbumId(encore.getAlbumId());
         crazyInLove.setAnio(encore.getAnio());
         crazyInLove.setGenero("Hip Hop");
+        crazyInLove.setUrl("Artistas/Eminem/cancion17.mp3");
         session.save(crazyInLove);
         //18
         Cancion oneShot2Shot = new Cancion();
@@ -372,6 +393,7 @@ public class Catalogo implements Serializable{
         oneShot2Shot.setAlbumId(encore.getAlbumId());
         oneShot2Shot.setAnio(encore.getAnio());
         oneShot2Shot.setGenero("Hip Hop");
+        oneShot2Shot.setUrl("Artistas/Eminem/cancion18.mp3");
         session.save(oneShot2Shot);
         //19
         Cancion finalThought = new Cancion();
@@ -379,6 +401,7 @@ public class Catalogo implements Serializable{
         finalThought.setAlbumId(encore.getAlbumId());
         finalThought.setAnio(encore.getAnio());
         finalThought.setGenero("Hip Hop");
+        finalThought.setUrl("Artistas/Eminem/cancion19.mp3");
         session.save(finalThought);
         //20
         Cancion curtainsDown = new Cancion();
@@ -386,6 +409,7 @@ public class Catalogo implements Serializable{
         curtainsDown.setAlbumId(encore.getAlbumId());
         curtainsDown.setAnio(encore.getAnio());
         curtainsDown.setGenero("Hip Hop");
+        curtainsDown.setUrl("Artistas/Eminem/cancion20.mp3");
         session.save(curtainsDown);
         // Fin canciones Encore - Eminem \\
         
@@ -398,6 +422,7 @@ public class Catalogo implements Serializable{
         curtainsUp.setGenero("Hip Hop");
         curtainsUp.setAlbumId(theEminemShow.getAlbumId());
         curtainsUp.setAnio(theEminemShow.getAnio());
+        curtainsUp.setUrl("Artistas/Eminem/cancion21.mp3");
         session.save(curtainsUp);
         //02
         Cancion whiteAmerica = new Cancion();
@@ -407,6 +432,7 @@ public class Catalogo implements Serializable{
         whiteAmerica.setGenero("Hip Hop");
         whiteAmerica.setAlbumId(theEminemShow.getAlbumId());
         whiteAmerica.setAnio(theEminemShow.getAnio());
+        whiteAmerica.setUrl("Artistas/Eminem/cancion22.mp3");
         session.save(whiteAmerica);
         //03
         Cancion business = new Cancion();
@@ -416,6 +442,7 @@ public class Catalogo implements Serializable{
         business.setGenero("Hip Hop");
         business.setAlbumId(theEminemShow.getAlbumId());
         business.setAnio(theEminemShow.getAnio());
+        business.setUrl("Artistas/Eminem/cancion23.mp3");
         session.save(business);
         //04
         Cancion cleaningOutMyCloset = new Cancion();
@@ -425,6 +452,7 @@ public class Catalogo implements Serializable{
         cleaningOutMyCloset.setGenero("Hip Hop");
         cleaningOutMyCloset.setAlbumId(theEminemShow.getAlbumId());
         cleaningOutMyCloset.setAnio(theEminemShow.getAnio());
+        cleaningOutMyCloset.setUrl("Artistas/Eminem/cancion24.mp3");
         session.save(cleaningOutMyCloset);
         //05
         Cancion squareDance = new Cancion();
@@ -434,6 +462,7 @@ public class Catalogo implements Serializable{
         squareDance.setGenero("Hip Hop");
         squareDance.setAlbumId(theEminemShow.getAlbumId());
         squareDance.setAnio(theEminemShow.getAnio());
+        squareDance.setUrl("Artistas/Eminem/cancion24.mp3");
         session.save(squareDance);
         //06
         Cancion theKiss = new Cancion();
@@ -443,6 +472,7 @@ public class Catalogo implements Serializable{
         theKiss.setGenero("Hip Hop");
         theKiss.setAlbumId(theEminemShow.getAlbumId());
         theKiss.setAnio(theEminemShow.getAnio());
+        theKiss.setUrl("Artistas/Eminem/cancion25.mp3");
         session.save(theKiss);
         //07
         Cancion soldier = new Cancion();
@@ -452,6 +482,7 @@ public class Catalogo implements Serializable{
         soldier.setGenero("Hip Hop");
         soldier.setAlbumId(theEminemShow.getAlbumId());
         soldier.setAnio(theEminemShow.getAnio());
+        soldier.setUrl("Artistas/Eminem/cancion26.mp3");
         session.save(soldier);
         //08
         Cancion sayGoodbyeHollywood = new Cancion();
@@ -461,6 +492,7 @@ public class Catalogo implements Serializable{
         sayGoodbyeHollywood.setGenero("Hip Hop");
         sayGoodbyeHollywood.setAlbumId(theEminemShow.getAlbumId());
         sayGoodbyeHollywood.setAnio(theEminemShow.getAnio());
+        sayGoodbyeHollywood.setUrl("Artistas/Eminem/cancion27.mp3");
         session.save(sayGoodbyeHollywood);
         //09
         Cancion drips = new Cancion();
@@ -470,6 +502,7 @@ public class Catalogo implements Serializable{
         drips.setGenero("Hip Hop");
         drips.setAlbumId(theEminemShow.getAlbumId());
         drips.setAnio(theEminemShow.getAnio());
+        drips.setUrl("Artistas/Eminem/cancion28.mp3");
         session.save(drips);
         //10
         Cancion withoutMe = new Cancion();
@@ -479,6 +512,7 @@ public class Catalogo implements Serializable{
         withoutMe.setGenero("Hip Hop");
         withoutMe.setAlbumId(theEminemShow.getAlbumId());
         withoutMe.setAnio(theEminemShow.getAnio());
+        withoutMe.setUrl("Artistas/Eminem/cancion29.mp3");
         session.save(withoutMe);
         //11
         Cancion paulRosenberg = new Cancion();
@@ -488,6 +522,7 @@ public class Catalogo implements Serializable{
         paulRosenberg.setGenero("Hip Hop");
         paulRosenberg.setAlbumId(theEminemShow.getAlbumId());
         paulRosenberg.setAnio(theEminemShow.getAnio());
+        paulRosenberg.setUrl("Artistas/Eminem/cancion30.mp3");
         session.save(paulRosenberg);
         //12
         Cancion singForTheMoment = new Cancion();
@@ -497,6 +532,7 @@ public class Catalogo implements Serializable{
         singForTheMoment.setGenero("Hip Hop");
         singForTheMoment.setAlbumId(theEminemShow.getAlbumId());
         singForTheMoment.setAnio(theEminemShow.getAnio());
+        singForTheMoment.setUrl("Artistas/Eminem/cancion31");
         session.save(singForTheMoment);
         //13
         Cancion superman = new Cancion();
@@ -506,6 +542,7 @@ public class Catalogo implements Serializable{
         superman.setGenero("Hip Hop");
         superman.setAlbumId(theEminemShow.getAlbumId());
         superman.setAnio(theEminemShow.getAnio());
+        superman.setUrl("Artistas/Eminem/cancion32");
         session.save(superman);
         //14
         Cancion hellieSong = new Cancion();
@@ -515,6 +552,7 @@ public class Catalogo implements Serializable{
         hellieSong.setGenero("Hip Hop");
         hellieSong.setAlbumId(theEminemShow.getAlbumId());
         hellieSong.setAnio(theEminemShow.getAnio());
+        hellieSong.setUrl("Artistas/Eminem/cancion33");
         session.save(hellieSong);
         //15
         Cancion steveBerman = new Cancion();
@@ -524,6 +562,7 @@ public class Catalogo implements Serializable{
         steveBerman.setGenero("Hip Hop");
         steveBerman.setAlbumId(theEminemShow.getAlbumId());
         steveBerman.setAnio(theEminemShow.getAnio());
+        steveBerman.setUrl("Artistas/Eminem/cancion34");
         session.save(steveBerman);
         //16
         Cancion whenTheMusicStops = new Cancion();
@@ -533,6 +572,7 @@ public class Catalogo implements Serializable{
         whenTheMusicStops.setGenero("Hip Hop");
         whenTheMusicStops.setAlbumId(theEminemShow.getAlbumId());
         whenTheMusicStops.setAnio(theEminemShow.getAnio());
+        whenTheMusicStops.setUrl("Artistas/Eminem/cancion35");
         session.save(whenTheMusicStops);
         //17
         Cancion sayWhatYouSay = new Cancion();
@@ -542,6 +582,7 @@ public class Catalogo implements Serializable{
         sayWhatYouSay.setGenero("Hip Hop");
         sayWhatYouSay.setAlbumId(theEminemShow.getAlbumId());
         sayWhatYouSay.setAnio(theEminemShow.getAnio());
+        sayWhatYouSay.setUrl("Artistas/Eminem/cancion36");
         session.save(sayWhatYouSay);
         //18
         Cancion tillIcollapse = new Cancion();
@@ -551,6 +592,7 @@ public class Catalogo implements Serializable{
         tillIcollapse.setGenero("Hip Hop");
         tillIcollapse.setAlbumId(theEminemShow.getAlbumId());
         tillIcollapse.setAnio(theEminemShow.getAnio());
+        tillIcollapse.setUrl("Artistas/Eminem/cancion37");
         session.save(tillIcollapse);
         //19
         Cancion myDadsGoneCrazy = new Cancion();
@@ -560,6 +602,7 @@ public class Catalogo implements Serializable{
         myDadsGoneCrazy.setGenero("Hip Hop");
         myDadsGoneCrazy.setAlbumId(theEminemShow.getAlbumId());
         myDadsGoneCrazy.setAnio(theEminemShow.getAnio());
+        myDadsGoneCrazy.setUrl("Artistas/Eminem/cancion38");
         session.save(myDadsGoneCrazy);
         //20
         Cancion curtainsClose = new Cancion();
@@ -569,6 +612,7 @@ public class Catalogo implements Serializable{
         curtainsClose.setGenero("Hip Hop");
         curtainsClose.setAlbumId(theEminemShow.getAlbumId());
         curtainsClose.setAnio(theEminemShow.getAnio());
+        curtainsClose.setUrl("Artistas/Eminem/cancion39");
         session.save(curtainsClose);
         //Fin Canciones The Eminem Show\\
         
@@ -582,8 +626,9 @@ public class Catalogo implements Serializable{
         introCurtainCall.setGenero("Hip Hop");
         introCurtainCall.setAlbumId(curtainCall.getAlbumId());
         introCurtainCall.setAnio(curtainCall.getAnio());
+        introCurtainCall.setUrl("Artistas/Eminem/cancion40");
         session.save(introCurtainCall);
-        //01   Fack 3:24
+        //02   Fack 3:24
         Cancion fack = new Cancion();
         fack.setTitulo("Fack");
         curtainCall.getCanciones().add(fack);
@@ -591,25 +636,170 @@ public class Catalogo implements Serializable{
         fack.setGenero("Hip Hop");
         fack.setAlbumId(curtainCall.getAlbumId());
         fack.setAnio(curtainCall.getAnio());
+        fack.setUrl("Artistas/Eminem/cancion41");
         session.save(fack);
+        //03
+        Cancion theWayIam = new Cancion();
+        theWayIam.setTitulo("The Way I am");
+        theWayIam.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(theWayIam);
+        theWayIam.setUrl("Artistas/Eminem/cancion42");
+        session.save(theWayIam);
+        //04
+        Cancion myNameIs = new Cancion();
+        myNameIs.setTitulo("My Name Is");
+        myNameIs.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(myNameIs);
+        myNameIs.setUrl("Artistas/Eminem/cancion43");
+        session.save(myNameIs);
+        //05
+        Cancion stan = new Cancion();
+        stan.setTitulo("Stan");
+        stan.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(stan);
+        stan.setUrl("Artistas/Eminem/cancion44");
+        session.save(stan);
+        //06
+        Cancion  loseYourself = new Cancion();
+        loseYourself.setTitulo("Lose Your Self");
+        loseYourself.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(loseYourself);
+        loseYourself.setUrl("Artistas/Eminem/cancion45");
+        session.save(loseYourself);
+        //07
+        Cancion  shakeThat = new Cancion();
+        shakeThat.setTitulo("Shake That");
+        shakeThat.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(shakeThat);
+        shakeThat.setUrl("Artistas/Eminem/cancion46");
+        session.save(shakeThat);
+        //08
+        Cancion  theRealSlimShady = new Cancion();
+        theRealSlimShady.setTitulo("The Real Slim Shady");
+        theRealSlimShady.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(theRealSlimShady);
+        theRealSlimShady.setUrl("Artistas/Eminem/cancion47");
+        session.save(theRealSlimShady);
+        //09
+        Cancion  guiltyConscience = new Cancion();
+        guiltyConscience.setTitulo("Guilty Conscience");
+        guiltyConscience.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(guiltyConscience);
+        guiltyConscience.setUrl("Artistas/Eminem/cancion48");
+        session.save(guiltyConscience);
+        //09
+        Cancion  cleaninOutMyCloset = new Cancion();
+        cleaninOutMyCloset.setTitulo("Cleanin' Out My Closet");
+        cleaninOutMyCloset.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(cleaninOutMyCloset);
+        cleaninOutMyCloset.setUrl("Artistas/Eminem/cancion49");
+        session.save(cleaninOutMyCloset);
+        //09
+        Cancion  whenImGone = new Cancion();
+        whenImGone.setTitulo("When I'm Gone");
+        whenImGone.setAlbumId(curtainCall.getAlbumId());
+        curtainCall.getCanciones().add(whenImGone);
+        whenImGone.setUrl("Artistas/Eminem/cancion50");
+        session.save(whenImGone);
+      //  FIN CANCIONES CURTAIN CALL DE EMINEM   \\
         
-        /*
-            The Way I Am 4:50
-            My Name Is 4:27
-            Stan 6:43
-            Lose Yourself 5:25
-            Shake That (con Nate Dogg) 4:32
-            Sing for the Moment 5:39
-            Without Me 4:50
-            Like Toy Soldiers 4:54
-            The Real Slim Shady 4:43
-            Mockingbird 4:10
-            Guilty Conscience (con Dr. Dre) 3:19
-            Cleanin' Out My Closet 4:57
-            Just Lose It 4:06
-            When I'm Gone 4:45
-            Stan (con Elton John) (en vivo) 6:19*/
-        // FIN CANCIONES CURTAIN CALL \\
+        //Canciones album x Deluxe Edition ed sheeran \\
+        //01
+        Cancion  one = new Cancion();
+        one.setTitulo("One");
+        one.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(one);
+        one.setUrl("Artistas/Eminem/cancion51");
+        session.save(one);
+        //02
+        Cancion  ImAmess = new Cancion();
+        ImAmess.setTitulo("I'm A Mess");
+        ImAmess.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(ImAmess);
+        ImAmess.setUrl("Artistas/Eminem/cancion52");
+        session.save(ImAmess);
+        //03
+        Cancion  sing = new Cancion();
+        sing.setTitulo("Sing");
+        sing.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(sing);
+        sing.setUrl("Artistas/Eminem/cancion53");
+        session.save(sing);
+        //04
+        Cancion  dont = new Cancion();
+        dont.setTitulo("Sing");
+        dont.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(dont);
+        dont.setUrl("Artistas/Eminem/cancion54");
+        session.save(dont);
+        //05
+        Cancion  nina = new Cancion();
+        nina.setTitulo("Nina");
+        nina.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(nina);
+        nina.setUrl("Artistas/Eminem/cancion55");
+        session.save(nina);
+        //06
+        Cancion  photograph = new Cancion();
+        photograph.setTitulo("Photograph");
+        photograph.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(photograph);
+        photograph.setUrl("Artistas/Eminem/cancion56");
+        session.save(photograph);
+        //07
+        Cancion  bloodstream = new Cancion();
+        bloodstream.setTitulo("Bloodstream");
+        bloodstream.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(bloodstream);
+        bloodstream.setUrl("Artistas/Eminem/cancion57");
+        session.save(bloodstream);
+        //08
+        Cancion  tenerifeSea = new Cancion();
+        tenerifeSea.setTitulo("Tenerife Sea");
+        tenerifeSea.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(tenerifeSea);
+        tenerifeSea.setUrl("Artistas/Eminem/cancion58");
+        session.save(tenerifeSea);
+        //09
+        Cancion  runaway = new Cancion();
+        runaway.setTitulo("Runaway");
+        runaway.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(runaway);
+        runaway.setUrl("Artistas/Eminem/cancion59");
+        session.save(runaway);
+        //10
+        Cancion  theMan = new Cancion();
+        theMan.setTitulo("The Man");
+        theMan.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(theMan);
+        theMan.setUrl("Artistas/Eminem/cancion60");
+        session.save(theMan);
+        //11
+        Cancion  thinkingOutLoud = new Cancion();
+        thinkingOutLoud.setTitulo("Thinking Out Loud");
+        thinkingOutLoud.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(thinkingOutLoud);
+        thinkingOutLoud.setUrl("Artistas/Eminem/cancion61");
+        session.save(thinkingOutLoud);
+        //12
+        Cancion  afireLove = new Cancion();
+        afireLove.setTitulo("Afire Love");
+        afireLove.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(afireLove);
+        afireLove.setUrl("Artistas/Eminem/cancion62");
+        session.save(afireLove);
+        //13
+        Cancion  takeItBack = new Cancion();
+        takeItBack.setTitulo("Take It Back");
+        takeItBack.setAlbumId(xDeluxeEdition.getAlbumId());
+        xDeluxeEdition.getCanciones().add(takeItBack);
+        takeItBack.setUrl("Artistas/Eminem/cancion63");
+        session.save(takeItBack);
+        // Fin canciones x dulex edition ed sheeran\\
+        
+        // Fin canciones de ed sheeran \\
+        
+        
         
         
         
@@ -665,6 +855,7 @@ public class Catalogo implements Serializable{
         
         //Serializar guardar archivo
         //Serializador.serialize(catalogo, new File ("/Users/minutti/Desktop/Catalogo_transient.negspot"));
+        
         session.getTransaction().commit();
         session.close();
     }//Cierre de main 
